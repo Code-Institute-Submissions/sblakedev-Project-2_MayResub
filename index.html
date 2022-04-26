@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome and Google font -->
+    <script src="https://kit.fontawesome.com/2d4eddc437.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Harry Potter Quiz</title>
 </head>
 <body>
-    
+    <h1 class="heading">
+        <img class="logo" src alt>Harry Potter Quiz
+    </h1>
+
+    <div class="welcome-area">
+        <h2>Welcome to the Quickfire Harry Potter Quiz</h2>
+        <p>How much do you know about the Harry Potter book series? Are you Outstanding? Or are you a Troll? Click on the Play Quiz button to start!</p>
+        <div id="button-div">
+            <button id="start-button">Start Quiz!</button>
+        </div>
+    </div>
+
+    <div id="quiz-area">
+        <div id="quiz-question">Ask a question</div>
+        <button id="answer-a">Answer A</button>
+        <button id="answer-b">Answer B</button>
+        <button id="answer-c">Answer C</button>
+        <button id="answer-d">Answer D</button>
+        <div id="quiz-score">Your score is: </div>
+    </div>
+
+    <div id="result-area">
+        <div id="final-result"></div>
+        <button id="play-again">Play Again</button>
+    </div>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
