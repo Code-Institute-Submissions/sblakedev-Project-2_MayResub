@@ -66,7 +66,29 @@ body {
     margin: 3%;
     font-size: 200%;
 }
+
+#final-result > h2 {
+    text-align: center;
+    font-size: 200%;
+    margin: 3%;
+}
+
+#final-result > p {
+    text-align: center;
+    padding: 10%;
+    margin: 3%;
+    font-size: 200%;
+}
+
+
 /*--Buttons--*/
+
+#start-button {
+    max-width: 100%;
+    border-radius: 10px;
+    font-size: 160%;
+}
+
 
 #answer-div {
     display: grid;
@@ -97,10 +119,8 @@ body {
     border-radius: 10px;
 }
 
-#answer-c {
-   
-}
-
-#answer-d {
-   
+#play-again {
+    max-width: 100%;
+    border-radius: 10px;
+    font-size: 160%;
 }
