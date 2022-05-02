@@ -18,9 +18,9 @@ let myQuestions = [
         question: "Who was headmaster of Hogwarts when Tom Riddle attended",
 
         answers: {
-            a:'Albus Dumbledore'
-            b:'Armando Dippet'
-            c:'Dilys Derwent'
+            a:'Albus Dumbledore',
+            b:'Armando Dippet',
+            c:'Dilys Derwent',
             d:'Phineas Nigellus Black'
         },
 
@@ -31,9 +31,9 @@ let myQuestions = [
         question: "How many Horcruxes did Lord Voldemort intend to make?",
 
         answers: {
-            a:'5'
-            b:'6'
-            c:'7'
+            a:'5',
+            b:'6',
+            c:'7',
             d:'8'
         },
 
@@ -44,10 +44,10 @@ let myQuestions = [
         question: "What was Lord Voldemort's first Horcrux?",
 
         answers: {
-            a:'Marvolo Gaunt\'s ring'
-            b:'Helga Hufflepuff\'s cup'
-            c:'Tom Riddle\'s diary'
-            d:'Nagini'
+            a:'Marvolo Gaunt\'s ring',
+            b:'Helga Hufflepuff\'s cup',
+            c:'Tom Riddle\'s diary',
+            d:'Nagini',
         },
 
         correctAnswer: 'c'
@@ -57,10 +57,10 @@ let myQuestions = [
         question: "Who revealed the existence of Dumbledore\'s Army to Dolores Umbridge?",
 
         answers: {
-            a:'Marietta Edgecomb'
-            b:'Cho Chang'
-            c:'Michael Corner'
-            d:'Terry Boot'
+            a:'Marietta Edgecomb',
+            b:'Cho Chang',
+            c:'Michael Corner',
+            d:'Terry Boot',
         },
 
         correctAnswer: 'a'
@@ -70,10 +70,10 @@ let myQuestions = [
         question: "What does Harry do with the Elder Wand at the end of Deathly Hallows?",
 
         answers: {
-            a:'He throws it away'
-            b:'He breaks it in half'
-            c:'He hides it behind Dumbledore\'s portrait'
-            d:'He keeps it to use himself'
+            a:'He throws it away',
+            b:'He breaks it in half',
+            c:'He hides it behind Dumbledore\'s portrait',
+            d:'He keeps it to use himself',
         },
 
         correctAnswer: 'd'
@@ -83,52 +83,52 @@ let myQuestions = [
         question: "Who was the announcer at the Quidditch World Cup?",
 
         answers: {
-            a:'Barty Crouch Sr'
-            b:'Cornelius Fudge'
-            c:'Rufus Scrimgeour'
+            a:'Barty Crouch Sr',
+            b:'Cornelius Fudge',
+            c:'Rufus Scrimgeour',
             d:'Ludo Bagman'
         },
 
-        correctAnswer: ''
+        correctAnswer: 'd'
     },
 
     {
-        question: "",
+        question: "How did Romilda Vane first try to give Harry a love potion?",
 
         answers: {
-            a:''
-            b:''
-            c:''
-            d:''
+            a:'She spiked his evening pumpkin juice',
+            b:'She gave him a box of spiked chocolate cauldrons',
+            c:'She offered him spiked gillywater',
+            d:'She spiked a chocolate frog and sent it to him'
         },
 
-        correctAnswer: ''
+        correctAnswer: 'c'
     },
 
     {
-        question: "",
+        question: "Who was the Professor of Muggle Studies?",
 
         answers: {
-            a:''
-            b:''
-            c:''
-            d:''
+            a:'Charity Burbage',
+            b:'Dolores Umbridge',
+            c:'Rolanda Hooch',
+            d:'Aurora Sinistra'
         },
 
-        correctAnswer: ''
+        correctAnswer: 'a'
     },
 
     {
-        question: "",
+        question: "Which member of the Peverell family is Harry descended from?",
 
         answers: {
-            a:''
-            b:''
-            c:''
-            d:''
+            a:'Antioch Peverell',
+            b:'Cadmus Peverell',
+            c:'Ignotus Peverell',
+            d:'Percival Peverell',
         },
 
-        correctAnswer: ''
+        correctAnswer: 'c'
     },
 ]
 
