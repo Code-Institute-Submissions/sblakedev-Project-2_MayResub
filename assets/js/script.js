@@ -132,14 +132,44 @@ let myQuestions = [
     },
 ]
 
+const startButton = document.querySelector("#start-button");
+const quizArea = document.querySelector("#quiz-area");
+const quizQuestion = quizArea.querySelector("#quiz-question");
+const answerDiv = quizArea.querySelector("#answer-div");
+const answerA = answerDiv.querySelector("#answer-a");
+const answerB = answerDiv.querySelector("#answer-b");
+const answerC = answerDiv.querySelector("#answer-c");
+const answerD = answerDiv.querySelector("#answer-d");
+const quizScore = quizArea.querySelector("#quiz-score");
+const resultArea = document.querySelector("result-area");
+const finalResult = resultArea.querySelector("#final-result");
+const showResult = resultArea.querySelector("#show-result");
+const showScore = resultArea.querySelector("#show-score");
+const playAgain = resultArea.querySelector("#play-again");
+
 
 //Functions
+
+//Get buttons and add event listeners
+
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
 
 //Starts the quiz
 
 function startQuiz() {
+  
+}
+
+function showQuiz(){
+    document.getElementById("quiz-area").style.display = "block";
+    document.getElementById("welcome-area").style.display = "none";
+    document.getElementById("result-area").style.display = "none";
+}
 
 }
+
+
 
 //Generates a random question
 
@@ -170,3 +200,5 @@ function incrementScore() {
 function showFinalScore() {
 
 }
+}
+)

@@ -29,6 +29,7 @@ body {
 }
 
 #quiz-area {
+    display: none;
     background-color: #ffe082;
     border: 2px solid black;
     margin: 3%;
@@ -42,6 +43,7 @@ body {
 }
 
 #result-area {
+    display: none;
     background-color: #ffe082;
     border: 2px solid black;
     margin: 50px;
