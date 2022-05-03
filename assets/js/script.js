@@ -136,12 +136,12 @@ const welcomeArea = document.getElementById("welcome-area");
 const startButton = document.getElementById("start-button");
 const quizArea = document.getElementById("quiz-area");
 const resultArea = document.getElementById("result-area");
-const question = document.getElementById("quiz-question");
+let question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
-console.log(answers);
+let choice = document.getElementsByClassName("answer-text");
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0; 
 let questionCounter = 0;
 let availableQuestions = [];
@@ -152,7 +152,7 @@ const maxQuestions = 10;
 //Functions
 
 //Get buttons and add event listeners
-startButton.addEventListener("click", function showQuiz() {
+startButton.addEventListener("click", function startQuiz() {
     welcomeArea.style.display="none";
     quizArea.style.display="flex"
 }
@@ -164,23 +164,45 @@ function startQuiz() {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...myQuestions];
+  console.log(availableQuestions);
   generateRandomQuestion();
 }
 
-//Generates a random question
+//Generates a random question and the corresponding 4 answers
 
 function generateRandomQuestion() {
+    
+    if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        quizArea.style.display="none";
+        resultArea.style.display="flex";
+    }
+    
   questionCounter++;
-  const questionIndex = Math.floor(Math.random() * availableQuestions.lenth);
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerHTML = currentQuestion.question;
-}
+  console.log(availableQuestions);
 
-//Displays the question and the corresponding 4 answers
+  answers.forEach( answer => {
+    const number = answer.dataset['number'];
+    answers.innerText = currentQuestion['answer'+ number];
+})
 
-function showQuestionAndAnswers() {
+availableQuestions.splice(questionIndex, 1);
 
-}
+acceptingAnswers = true;
+};
+
+answers.forEach(answer => {
+    answer.addEventListener('click', e => {
+        if(!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+        generateRandomQuestion();
+        });
+})
 
 // Checks if the user's answer is right or wrong
 
