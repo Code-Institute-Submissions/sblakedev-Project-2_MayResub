@@ -140,7 +140,14 @@ const question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 console.log(answers);
 
+let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0; 
+let questionCounter = 0;
+let availableQuestions = [];
 
+const correctBonus = 1;
+const maxQuestions = 10;
 
 //Functions
 
@@ -151,30 +158,28 @@ startButton.addEventListener("click", function showQuiz() {
 }
 )
 
-function startQuiz() {
-  
-}
-
 //Starts the quiz
 
-function showQuiz(){
-    startButton.addEventListener("click", showQuizArea);
-    
-
+function startQuiz() {
+  questionCounter = 0;
+  score = 0;
+  availableQuestions = [...myQuestions];
+  generateRandomQuestion();
 }
 
 //Generates a random question
 
 function generateRandomQuestion() {
-
+  questionCounter++;
+  const questionIndex = Math.floor(Math.random() * availableQuestions.lenth);
+  currentQuestion = availableQuestions[questionIndex];
+  question.innerHTML = currentQuestion.question;
 }
 
 //Displays the question and the corresponding 4 answers
 
 function showQuestionAndAnswers() {
-  this.myQuestions = question;
-  this.rightanswer = rightAnswer;
-  this.wrongAnswer = wrongAnswer;
+
 }
 
 // Checks if the user's answer is right or wrong
