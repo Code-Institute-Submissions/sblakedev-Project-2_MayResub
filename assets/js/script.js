@@ -139,6 +139,7 @@ const resultArea = document.getElementById("result-area");
 let question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 let choice = document.getElementsByClassName("answer-text");
+const playAgain = document.getElementById("play-again");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -158,6 +159,12 @@ startButton.addEventListener("click", function startQuiz() {
 }
 )
 
+playAgain.addEventListener("click", function startQuiz(){
+    welcomeArea.style.display="flex";
+    quizArea.style.display="none";
+    resultArea.style.display="none"
+})
+
 //Starts the quiz
 
 function startQuiz() {
@@ -166,7 +173,7 @@ function startQuiz() {
   availableQuestions = [...myQuestions];
   console.log(availableQuestions);
   generateRandomQuestion();
-}
+};
 
 //Generates a random question and the corresponding 4 answers
 
