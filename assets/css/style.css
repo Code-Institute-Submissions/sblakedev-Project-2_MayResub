@@ -10,7 +10,7 @@ body {
 
 .heading {
     text-align: center;
-    font-size: 250%;
+    font-size: 350%;
 }
 
 /*--Quiz layout--*/
@@ -26,6 +26,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 200%;
+    text-align: center;
 }
 
 #quiz-area {
@@ -39,6 +41,8 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
+    font-size: 200%;
+    text-align: center;
 }
 
 #result-area {
@@ -52,6 +56,7 @@ body {
     padding: 50px;
     flex-direction: column;
     align-items: center;
+    font-size: 200%;
 }
 
 #quiz-question {
@@ -72,9 +77,22 @@ body {
     font-size: 200%;
 }
 
+
 #button-div {
     padding: 1%;
     margin: 3%;
+}
+
+#answer-div {
+    display: grid;
+    grid-template-columns: 350% 350%;
+    grid-template-rows: 80px 80px;
+    column-gap: 10%;
+    row-gap: 10%;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 100%;
 }
 
 #final-result > h2 {
@@ -108,13 +126,13 @@ body {
     justify-items: center;
     justify-content: space-around;
     align-content: center;
+    font-size: 100%;
 }
 
 #answer-a, #answer-b {
     max-width: 100%;
     padding: 0% 25% 0% 25%;
-    grid-row: 1/2;
-    display: grid;
+    
     grid-template-columns: 20% 80%;
     border-radius: 10px;
 }
@@ -122,8 +140,8 @@ body {
 #answer-c, #answer-d {
     max-width: 100%;
     padding: 0% 25% 0% 25%;
-    grid-row: 2/3;
-    display: grid;
+    
+    
     grid-template-columns: 20% 80%;
     border-radius: 10px;
 }
@@ -131,6 +149,11 @@ body {
 .answer-text {
     padding: 3%;
     max-width: fit-content;
+    background-color: beige;
+    border: 1px solid black;
+    display: flex;
+    font-size:160%;
+    text-align: center;
 }
 
 #play-again {
@@ -141,39 +164,21 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width:1920px) {
+/*@media screen and (max-width:1920px) {
 
-    .heading {
-        font-size: 350%;
-    }
     
-    #welcome-area {
-        font-size: 200%;
-        text-align: center;
-    }
-
-    #quiz-area {
-        font-size: 200%;
-        text-align: center;
-    }
- 
-    #answer-div {
-    display: grid;
-    grid-template-columns: 200% 200%;
-    grid-template-rows: 80px 80px;
-    font-size: 100%;
-    }
-
-    .answer-text {
-        font-size:160%;
-        text-align: center;
-    }
-
     #result-area {
         font-size: 200%;
     }
-}
+}*/
 
+@media screen and (max-width:1022px) {}
+
+@media screen and (max-width:790px) {}
+
+@media screen and (max-width:631px) {}
+
+@media screen and (max-width:376px) {}
 
 @media screen and (max-width:320px) {
     .heading {
