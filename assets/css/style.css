@@ -72,6 +72,11 @@ body {
     font-size: 200%;
 }
 
+#button-div {
+    padding: 1%;
+    margin: 3%;
+}
+
 #final-result > h2 {
     text-align: center;
     font-size: 200%;
@@ -91,8 +96,9 @@ body {
 #start-button {
     max-width: 100%;
     border-radius: 10px;
-    font-size: 160%;
+    font-size: 100%;
 }
+
 
 
 #answer-div {
@@ -128,8 +134,87 @@ body {
     padding: 3%;
     max-width: fit-content;
 }
+
 #play-again {
     max-width: 100%;
     border-radius: 10px;
     font-size: 160%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1920px) {
+
+    .heading {
+        font-size: 350%;
+    }
+    
+    #welcome-area {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    #quiz-area {
+        font-size: 200%;
+        text-align: center;
+    }
+ 
+    .answer-text {
+        font-size:160%;
+        text-align: center;
+    }
+
+    #result-area {
+        font-size: 200%;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .heading {
+        font-size: 150%
+    }
+    
+    #welcome-area {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    #quiz-area {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    #quiz-question {
+        font-size: 100%;
+        padding: 5% 0% 5% 0%;
+    }
+
+    #answer-div {
+        display: grid;
+        grid-template-columns: 450%;
+        grid-template-rows: 25px 25px 25px 25px;
+        column-gap: 10%;
+        row-gap: 10%;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: center;
+        padding: 20%;
+    }
+
+    .answer-text {
+        font-size:80%;
+        text-align: center;
+    }
+
+    #quiz-score > p {
+        text-align: center;
+        padding: 10%;
+        margin: 3%;
+        font-size: 100%;
+    }
+
+    #result-area {
+        font-size: 50%;
+    }
 }
