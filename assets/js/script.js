@@ -4,142 +4,119 @@ let myQuestions = [
     {
         question: "What was the name of Uncle Vernon's company?",
 
-        answers: {
-            a:'Drills n Things',
-            b:'Dursley\'s Drills',
-            c:'Grunnings',
-            d:'Masons'
-        },
-
-        correctAnswer: 'c'
+        answer1:'Drills n Things',
+        answer2:'Dursley\'s Drills',
+        answer3:'Grunnings',
+        answer4:'Masons',
+        correctAnswer: 3
     },
     
     {
         question: "Who was headmaster of Hogwarts when Tom Riddle attended",
 
-        answers: {
-            a:'Albus Dumbledore',
-            b:'Armando Dippet',
-            c:'Dilys Derwent',
-            d:'Phineas Nigellus Black'
-        },
-
-        correctAnswer: 'b'
+        answer1:'Albus Dumbledore',
+        answer2:'Armando Dippet',
+        answer3:'Dilys Derwent',
+        answer4:'Phineas Nigellus Black',
+        correctAnswer: 2
     },
 
     {
         question: "How many Horcruxes did Lord Voldemort intend to make?",
 
-        answers: {
-            a:'5',
-            b:'6',
-            c:'7',
-            d:'8'
-        },
-
-        correctAnswer: 'b'
+        answer1:'5',
+        answer2:'6',
+        answer3:'7',
+        answer4:'8',
+        correctAnswer: 2
     },
 
     {
         question: "What was Lord Voldemort's first Horcrux?",
 
-        answers: {
-            a:'Marvolo Gaunt\'s ring',
-            b:'Helga Hufflepuff\'s cup',
-            c:'Tom Riddle\'s diary',
-            d:'Nagini',
-        },
-
-        correctAnswer: 'c'
+        answer1:'Marvolo Gaunt\'s ring',
+        answer2:'Helga Hufflepuff\'s cup',
+        answer3:'Tom Riddle\'s diary',
+        answer4:'Nagini',
+        correctAnswer: 3
     },
 
     {
         question: "Who revealed the existence of Dumbledore\'s Army to Dolores Umbridge?",
 
-        answers: {
-            a:'Marietta Edgecomb',
-            b:'Cho Chang',
-            c:'Michael Corner',
-            d:'Terry Boot',
-        },
-
-        correctAnswer: 'a'
+        answer1:'Marietta Edgecomb',
+        answer2:'Cho Chang',
+        answer3:'Michael Corner',
+        answer4:'Terry Boot',
+        correctAnswer: 1
     },
 
     {
         question: "What does Harry do with the Elder Wand at the end of Deathly Hallows?",
-
-        answers: {
-            a:'He throws it away',
-            b:'He breaks it in half',
-            c:'He hides it behind Dumbledore\'s portrait',
-            d:'He keeps it to use himself',
-        },
-
-        correctAnswer: 'd'
+        answer1:'He throws it away',
+        answer2:'He breaks it in half',
+        answer3:'He hides it behind Dumbledore\'s portrait',
+        answer4:'He keeps it to use himself',
+        correctAnswer: 3
     },
 
     {
         question: "Who was the announcer at the Quidditch World Cup?",
 
-        answers: {
-            a:'Barty Crouch Sr',
-            b:'Cornelius Fudge',
-            c:'Rufus Scrimgeour',
-            d:'Ludo Bagman'
-        },
-
-        correctAnswer: 'd'
+        answer1:'Barty Crouch Sr',
+        answer2:'Cornelius Fudge',
+        answer3:'Rufus Scrimgeour',
+        answer4:'Ludo Bagman',
+        correctAnswer: 4
     },
 
     {
         question: "How did Romilda Vane first try to give Harry a love potion?",
 
-        answers: {
-            a:'She spiked his evening pumpkin juice',
-            b:'She gave him a box of spiked chocolate cauldrons',
-            c:'She offered him spiked gillywater',
-            d:'She spiked a chocolate frog and sent it to him'
-        },
-
-        correctAnswer: 'c'
+        answer1:'She spiked his evening pumpkin juice',
+        answer2:'She gave him a box of spiked chocolate cauldrons',
+        answer3:'She offered him spiked gillywater',
+        answer4:'She spiked a chocolate frog and sent it to him',
+        correctAnswer: 3
     },
 
     {
         question: "Who was the Professor of Muggle Studies?",
 
-        answers: {
-            a:'Charity Burbage',
-            b:'Dolores Umbridge',
-            c:'Rolanda Hooch',
-            d:'Aurora Sinistra'
-        },
-
-        correctAnswer: 'a'
+        answer1:'Charity Burbage',
+        answer2:'Dolores Umbridge',
+        answer3:'Rolanda Hooch',
+        answer4:'Aurora Sinistra',
+        correctAnswer: 1
     },
 
     {
         question: "Which member of the Peverell family is Harry descended from?",
 
-        answers: {
-            a:'Antioch Peverell',
-            b:'Cadmus Peverell',
-            c:'Ignotus Peverell',
-            d:'Percival Peverell',
-        },
-
-        correctAnswer: 'c'
+        answer1:'Antioch Peverell',
+        answer2:'Cadmus Peverell',
+        answer3:'Ignotus Peverell',
+        answer4:'Percival Peverell',
+        correctAnswer: 3
     },
 ]
 
+console.log(myQuestions[0].question);
+console.log(myQuestions.length);
+
+//Variables//
+
 const welcomeArea = document.getElementById("welcome-area");
 const startButton = document.getElementById("start-button");
+const buttonContainer = document.getElementById("button-div");
 const quizArea = document.getElementById("quiz-area");
 const resultArea = document.getElementById("result-area");
 let question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
-let choice = document.getElementsByClassName("answer-text");
+const answerContainer = document.getElementById("answer-div")
 const playAgain = document.getElementById("play-again");
+
+console.log(answers)
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -164,6 +141,8 @@ playAgain.addEventListener("click", function startQuiz(){
     quizArea.style.display="none";
     resultArea.style.display="none"
 })
+
+//answers.addEventListener("click", function checkAnswer());//
 
 //Starts the quiz
 
@@ -192,7 +171,8 @@ function generateRandomQuestion() {
 
   answers.forEach( answer => {
     const number = answer.dataset['number'];
-    answers.innerText = currentQuestion['answer'+ number];
+    answer.innerHTML = currentQuestion['answer'+ number];
+    
 })
 
 availableQuestions.splice(questionIndex, 1);

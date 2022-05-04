@@ -99,8 +99,6 @@ body {
     font-size: 100%;
 }
 
-
-
 #answer-div {
     display: grid;
     grid-template-columns: 350% 350%;
@@ -159,6 +157,13 @@ body {
         text-align: center;
     }
  
+    #answer-div {
+    display: grid;
+    grid-template-columns: 200% 200%;
+    grid-template-rows: 80px 80px;
+    font-size: 100%;
+    }
+
     .answer-text {
         font-size:160%;
         text-align: center;
