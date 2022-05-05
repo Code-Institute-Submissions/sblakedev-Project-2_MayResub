@@ -113,12 +113,10 @@ const answerContainer = document.getElementById("answer-div")
 const playAgain = document.getElementById("play-again");
 let scoreText = document.getElementById("score");
 let questionCounterText = document.getElementById("question-counter");
-let showScore = document.getElementById("show-score");
+//let showScore = document.getElementById("show-score");//
 let showResult = document.getElementById("show-result");
-const updatedScore = localStorage.getItem("updatedScore");
-
-
-
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+const finalScore = document.getElementById("show-score");
 
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 let currentQuestion = {};
@@ -160,7 +158,7 @@ function generateRandomQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         quizArea.style.display = "none";
         resultArea.style.display = "flex";
-        localStorage.setItem("updatedScore", score);
+        localStorage.setItem('mostRecentScore', score);
         return startQuiz();
     }
 
@@ -214,35 +212,31 @@ answers.forEach(answer => {
 function incrementScore(num) {
     score = score + num;
     scoreText.innerHTML = score;
-    return score;
-  };
- 
-
-
+    };
 
 //Show's the user's final score
 
 function showFinalScore() {
-    showScore.innerText = updatedScore;
+    finalScore.innerHTML = mostRecentScore;
 }
 
 showFinalScore();
 
 //Show's the user's final result
 function showFinalResult() {
-    if (score >= 8 ) {
+    if (mostRecentScore >= 8) {
         showResult.innerHTML = "Outstanding";
-    } else if (score >= 6) {
+    } else if (mostRecentScore >= 6) {
         showResult.innerHTML = "Exceeds Expectations";
-    } else if (score >= 4) {
+    } else if (mostRecentScore >= 4) {
         showResult.innerHTML = "Acceptable";
-    } else if (score >= 2) {
+    } else if (mostRecentScore >= 2) {
         showResult.innerHTML = "Pass";
-    } else if (score >= 0) {
+    } else if (mostRecentScore >= 0) {
         showResult.innerHTML = "Troll";
     }
-    
 }
 
+showFinalResult();
 
 startQuiz();
