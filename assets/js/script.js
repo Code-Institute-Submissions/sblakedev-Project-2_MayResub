@@ -113,7 +113,10 @@ const answerContainer = document.getElementById("answer-div")
 const playAgain = document.getElementById("play-again");
 let scoreText = document.getElementById("score");
 let questionCounterText = document.getElementById("question-counter");
-let showScore = document.getElementById("show-score")
+let showScore = document.getElementById("show-score");
+let showResult = document.getElementById("show-result");
+const updatedScore = localStorage.getItem("updatedScore");
+
 
 
 
@@ -157,6 +160,7 @@ function generateRandomQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         quizArea.style.display = "none";
         resultArea.style.display = "flex";
+        localStorage.setItem("updatedScore", score);
         return startQuiz();
     }
 
@@ -206,17 +210,39 @@ answers.forEach(answer => {
 //Increases the user's score on a correct answer
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 
-incrementScore = num => {
-    score += num;
-    scoreText.innerHTML = score;
-}
 
-//Show's the user's final score out of ten
+function incrementScore(num) {
+    score = score + num;
+    scoreText.innerHTML = score;
+    return score;
+  };
+ 
+
+
+
+//Show's the user's final score
 
 function showFinalScore() {
-    showScore.innerHTML = `${score}`;
+    showScore.innerText = updatedScore;
 }
 
 showFinalScore();
+
+//Show's the user's final result
+function showFinalResult() {
+    if (score >= 8 ) {
+        showResult.innerHTML = "Outstanding";
+    } else if (score >= 6) {
+        showResult.innerHTML = "Exceeds Expectations";
+    } else if (score >= 4) {
+        showResult.innerHTML = "Acceptable";
+    } else if (score >= 2) {
+        showResult.innerHTML = "Pass";
+    } else if (score >= 0) {
+        showResult.innerHTML = "Troll";
+    }
+    
+}
+
 
 startQuiz();
