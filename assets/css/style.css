@@ -70,10 +70,15 @@ body {
     max-height: 200%;
 }
 
-#quiz-question > p, #quiz-score > p {
+#quiz-question > p {
     text-align: center;
     padding: 10%;
     margin: 3%;
+    font-size: 200%;
+}
+
+#quiz-score > p {
+    text-align: center;
     font-size: 200%;
 }
 
@@ -118,14 +123,25 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 #answer-b, #answer-d {
     grid-column-start: 3;
     grid-column-end: 4;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
+#answer-a:hover, #answer-b:hover, #answer-c:hover, #answer-d:hover {
+    border: 2px solid #780000;
+}
+
+#answer-a:active, #answer-b:active, #answer-c:active, #answer-d:active {
+    background-color: white;
+}
 .answer-text {
  background-color: beige;
  width: 100%;
