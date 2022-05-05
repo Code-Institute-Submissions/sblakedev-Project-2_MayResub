@@ -12,7 +12,7 @@ let myQuestions = [
     },
     
     {
-        question: "Who was headmaster of Hogwarts when Tom Riddle attended",
+        question: "Who was headmaster of Hogwarts when Tom Riddle attended?",
 
         answer1:'Albus Dumbledore',
         answer2:'Armando Dippet',

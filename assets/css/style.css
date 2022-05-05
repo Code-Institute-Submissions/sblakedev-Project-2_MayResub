@@ -4,6 +4,7 @@
 body {
     background-color: #780000;
     font-family: 'Abel', sans-serif;
+    margin: 0;
 }
 
 /*--Heading--*/
@@ -11,7 +12,13 @@ body {
 .heading {
     text-align: center;
     font-size: 350%;
+    background-color: #ffe082;
+    height: 70px;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
 
 /*--Quiz layout--*/
 
@@ -153,6 +160,50 @@ body {
     font-size: 160%;
 }
 
+footer {
+    height: 75px;
+    width: 100%;
+    line-height: 75px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#footer-background-color {
+    background-color: #ffe082;
+    overflow: hidden;
+}
+
+.social-networks {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-left: -27px;
+}
+
+.social-networks>li {
+    display: inline;
+    float: left;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin-left: 25px;
+    color: black;
+    padding: 25%;
+    vertical-align: middle;
+}
+
+footer>p {
+    float: right;
+    font-size: 150%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    vertical-align: middle;
+}
 /* Media Queries */
 
 /*@media screen and (max-width:1920px) {
