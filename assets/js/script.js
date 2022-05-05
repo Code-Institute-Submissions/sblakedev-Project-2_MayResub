@@ -115,6 +115,9 @@ let question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const answerContainer = document.getElementById("answer-div")
 const playAgain = document.getElementById("play-again");
+let scoreText = document.getElementById("score");
+let questionCounterText = document.getElementById("question-counter");
+
 
 
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
@@ -164,6 +167,7 @@ function generateRandomQuestion() {
     }
     
   questionCounter++;
+  questionCounterText.innerHTML = questionCounter + '/' + maxQuestions;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerHTML = currentQuestion.question;
@@ -179,6 +183,8 @@ availableQuestions.splice(questionIndex, 1);
 acceptingAnswers = true;
 };
 
+// Checks if the user's answer is right or wrong
+
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -189,28 +195,24 @@ answers.forEach(answer => {
 
         const classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct" : "incorrect";
 
+        if (classToApply === "correct") {
+            incrementScore(correctBonus);
+        }
+
         selectedChoice.classList.add(classToApply);
+        setTimeout( () => {
+            selectedChoice.classList.remove(classToApply);
+            generateRandomQuestion();
+        }, 200)    
 
-       
-
-        
-
-        generateRandomQuestion();
         });
 })
 
-// Checks if the user's answer is right or wrong
-
-function checkAnswer() {
-    let correctAnswer = currentQuestion.correctAnswer;
-    console.log(correctAnswer);
-
-}
-
 //Increases the user's score on a correct answer
 
-function incrementScore() {
-
+incrementScore = num => {
+    score += num;
+    scoreText.innerHTML = score;
 }
 
 //Show's the user's final score out of ten

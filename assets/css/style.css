@@ -89,6 +89,21 @@ body {
     font-size: 200%;
 }
 
+#hud {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hud-prefix {
+    font-size: 110%;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+
 #button-div {
     padding: 1%;
     margin: 3%;
@@ -145,11 +160,6 @@ body {
 #answer-a:hover, #answer-b:hover, #answer-c:hover, #answer-d:hover {
     border: 2px solid #780000;
 }
-
-/* #answer-a:active, #answer-b:active, #answer-c:active, #answer-d:active {
-    background-color: white;
-}
-*/
 
 #answer-a.correct, #answer-b.correct, #answer-c.correct, #answer-d.correct {
     background-color: rgb(98, 243, 147);
