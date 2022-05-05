@@ -146,9 +146,19 @@ body {
     border: 2px solid #780000;
 }
 
-#answer-a:active, #answer-b:active, #answer-c:active, #answer-d:active {
+/* #answer-a:active, #answer-b:active, #answer-c:active, #answer-d:active {
     background-color: white;
 }
+*/
+
+#answer-a.correct, #answer-b.correct, #answer-c.correct, #answer-d.correct {
+    background-color: rgb(98, 243, 147);
+}
+
+#answer-a.incorrect, #answer-b.incorrect, #answer-c.incorrect, #answer-d.incorrect {
+    background-color: rgba(240, 109, 109, 0.904)
+}
+
 .answer-text {
  background-color: beige;
  width: 100%;
