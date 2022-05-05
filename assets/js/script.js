@@ -174,6 +174,7 @@ function generateRandomQuestion() {
 
     })
 
+    //Removes used question from array
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
@@ -208,7 +209,6 @@ answers.forEach(answer => {
 //Increases the user's score on a correct answer
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 
-
 function incrementScore(num) {
     score = score + num;
     scoreText.innerHTML = score;
@@ -236,6 +236,7 @@ function showFinalResult() {
         showResult.innerHTML = "Troll";
     }
 }
+
 
 showFinalResult();
 

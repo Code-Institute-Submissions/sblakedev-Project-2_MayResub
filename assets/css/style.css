@@ -11,9 +11,9 @@ body {
 
 .heading {
     text-align: center;
-    font-size: 350%;
+    font-size: 250%;
     background-color: #ffe082;
-    height: 70px;
+    height: 60px;
     margin: 0;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 200%;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -44,26 +44,25 @@ body {
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
-    padding: 3%;
+    padding: 3% 3% 0% 3%;
     display: none;
     flex-direction: column;
     align-items: center;
-    font-size: 192%;
+    font-size: 100%;
     text-align: center;
 }
 
 #result-area {
-    display: none;
     background-color: #ffe082;
     border: 2px solid black;
-    margin: 50px;
+    margin: 3%;
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
-    padding: 50px;
-    flex-direction: column;
+    display: none;
     align-items: center;
-    font-size: 200%;
+    font-size: 100%;
+    text-align: center;
 }
 
 #question-container {
@@ -111,8 +110,9 @@ body {
 
 #final-result > h2 {
     text-align: center;
-    font-size: 200%;
+    padding: 10%;
     margin: 3%;
+    font-size: 200%;
 }
 
 #final-result > p {
@@ -177,7 +177,7 @@ body {
 #play-again {
     max-width: 100%;
     border-radius: 10px;
-    font-size: 160%;
+    font-size: 100%;
 }
 
 footer {
