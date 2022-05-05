@@ -41,7 +41,7 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    font-size: 200%;
+    font-size: 192%;
     text-align: center;
 }
 
@@ -59,15 +59,15 @@ body {
     font-size: 200%;
 }
 
+#question-container {
+    max-width: max-content;
+    max-height: 200%;
+    overflow: hidden;
+    }
+
 #quiz-question {
     font-size: 200%;
-    padding-bottom: 5%;
-}
-
-#quiz-question > h2 {
-    text-align: center;
-    font-size: 200%;
-    margin: 3%;
+    max-height: 200%;
 }
 
 #quiz-question > p, #quiz-score > p {
@@ -77,22 +77,9 @@ body {
     font-size: 200%;
 }
 
-
 #button-div {
     padding: 1%;
     margin: 3%;
-}
-
-#answer-div {
-    display: grid;
-    grid-template-columns: 350% 350%;
-    grid-template-rows: 80px 80px;
-    column-gap: 10%;
-    row-gap: 10%;
-    justify-items: center;
-    justify-content: space-around;
-    align-content: center;
-    font-size: 100%;
 }
 
 #final-result > h2 {
@@ -118,42 +105,30 @@ body {
 }
 
 #answer-div {
-    display: grid;
-    grid-template-columns: 350% 350%;
-    grid-template-rows: 80px 80px;
-    column-gap: 10%;
-    row-gap: 10%;
-    justify-items: center;
-    justify-content: space-around;
-    align-content: center;
-    font-size: 100%;
+    display: inline-grid;
+    grid-template-columns: 48% 1fr 48%;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+    max-height: max-content;
+    padding-bottom: inherit;
 }
 
-#answer-a, #answer-b {
-    max-width: 100%;
-    padding: 0% 25% 0% 25%;
-    
-    grid-template-columns: 20% 80%;
-    border-radius: 10px;
+#answer-a, #answer-c {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
 }
 
-#answer-c, #answer-d {
-    max-width: 100%;
-    padding: 0% 25% 0% 25%;
-    
-    
-    grid-template-columns: 20% 80%;
-    border-radius: 10px;
+#answer-b, #answer-d {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
 }
 
 .answer-text {
-    padding: 3%;
-    max-width: fit-content;
-    background-color: beige;
-    border: 1px solid black;
-    display: flex;
-    font-size:160%;
-    text-align: center;
+ background-color: beige;
+ width: 100%;
 }
 
 #play-again {

@@ -118,6 +118,7 @@ const playAgain = document.getElementById("play-again");
 
 console.log(answers)
 
+//Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0; 
@@ -145,7 +146,7 @@ playAgain.addEventListener("click", function startQuiz(){
 //answers.addEventListener("click", function checkAnswer());//
 
 //Starts the quiz
-
+//Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 function startQuiz() {
   questionCounter = 0;
   score = 0;
@@ -155,7 +156,7 @@ function startQuiz() {
 };
 
 //Generates a random question and the corresponding 4 answers
-
+//Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 function generateRandomQuestion() {
     
     if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
