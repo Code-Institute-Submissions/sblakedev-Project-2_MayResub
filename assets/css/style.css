@@ -69,6 +69,12 @@ body {
     align-items: center;
 }
 
+#final-result{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #question-container {
     max-width: max-content;
     max-height: 200%;
@@ -117,6 +123,7 @@ body {
     padding: 10%;
     margin: 3%;
     font-size: 200%;
+    width: 100%;
 }
 
 #final-result > p {
@@ -124,6 +131,7 @@ body {
     padding: 10%;
     margin: 3%;
     font-size: 200%;
+    width: 100%;
 }
 
 
@@ -179,9 +187,15 @@ body {
 }
 
 #play-again {
-    max-width: 100%;
+    
     border-radius: 10px;
     font-size: 100%;
+
+}
+
+#play-again-btn {
+    padding: 3%;
+    width: 100%;
 }
 
 footer {
