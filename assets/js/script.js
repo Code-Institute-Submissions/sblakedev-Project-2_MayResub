@@ -128,12 +128,11 @@ let availableQuestions = [];
 const correctBonus = 1;
 const maxQuestions = 10;
 
-//Functions
-
 //Get buttons and add event listeners
 startButton.addEventListener("click", function startQuiz() {
     welcomeArea.style.display = "none";
     quizArea.style.display = "flex"
+    
 })
 
 playAgain.addEventListener("click", function startQuiz() {
@@ -142,6 +141,7 @@ playAgain.addEventListener("click", function startQuiz() {
     resultArea.style.display = "none"
 })
 
+//Functions
 //Starts the quiz
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 function startQuiz() {
@@ -157,7 +157,7 @@ function generateRandomQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         quizArea.style.display = "none";
-        resultArea.style.display = "flex";
+        //resultArea.style.display = "flex";//
         localStorage.setItem('mostRecentScore', score);
         return startQuiz();
     }
@@ -223,7 +223,7 @@ function showFinalScore() {
     resultArea.style.display = "flex"
 }
 
-showFinalScore();
+//showFinalScore();//
 
 //Show's the user's final result
 function showFinalResult() {
@@ -240,7 +240,7 @@ function showFinalResult() {
     }
 }
 
-
+startQuiz();
+showFinalScore();
 showFinalResult();
 
-startQuiz();
