@@ -218,6 +218,9 @@ function incrementScore(num) {
 
 function showFinalScore() {
     finalScore.innerHTML = mostRecentScore;
+    welcomeArea.style.display = "none";
+    quizArea.style.display = "none";
+    resultArea.style.display = "flex"
 }
 
 showFinalScore();
