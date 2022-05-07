@@ -98,22 +98,19 @@ let myQuestions = [{
         answer4: 'Percival Peverell',
         correctAnswer: 3
     },
-]
+];
 
 //Variables//
 
 const welcomeArea = document.getElementById("welcome-area");
 const startButton = document.getElementById("start-button");
-const buttonContainer = document.getElementById("button-div");
 const quizArea = document.getElementById("quiz-area");
 const resultArea = document.getElementById("result-area");
 let question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
-const answerContainer = document.getElementById("answer-div")
 const playAgain = document.getElementById("play-again");
 let scoreText = document.getElementById("score");
 let questionCounterText = document.getElementById("question-counter");
-//let showScore = document.getElementById("show-score");//
 let showResult = document.getElementById("show-result");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const finalScore = document.getElementById("show-score");
@@ -129,38 +126,42 @@ const correctBonus = 1;
 const maxQuestions = 10;
 
 //Get buttons and add event listeners
-startButton.addEventListener("click", function startQuiz() {
+startButton.addEventListener("click", function firstQuestion() {
     welcomeArea.style.display = "none";
-    quizArea.style.display = "flex"
-    
-})
+    quizArea.style.display = "flex";
+    resultArea.style.display = "none";
+    score = 0;
+});
 
-playAgain.addEventListener("click", function startQuiz() {
+playAgain.addEventListener("click", startQuiz); {
     welcomeArea.style.display = "flex";
     quizArea.style.display = "none";
-    resultArea.style.display = "none"
-})
+    resultArea.style.display = "none";
+};
 
 //Functions
 //Starts the quiz
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 function startQuiz() {
+    welcomeArea.style.display = "flex";
+    quizArea.style.display = "none";
+    resultArea.style.display = "none";
     questionCounter = 0;
     score = 0;
+    incrementScore(0);
     availableQuestions = [...myQuestions];
     generateRandomQuestion();
-};
+}
 
 //Generates a random question and the corresponding 4 answers
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 function generateRandomQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        quizArea.style.display = "none";
-        //resultArea.style.display = "flex";//
         localStorage.setItem('mostRecentScore', score);
-        return startQuiz();
-    }
+        quizArea.style.display = "none";
+        resultArea.style.display = "flex";
+    };
 
     questionCounter++;
     questionCounterText.innerHTML = questionCounter + '/' + maxQuestions;
@@ -169,16 +170,15 @@ function generateRandomQuestion() {
     question.innerHTML = currentQuestion.question;
 
     answers.forEach(answer => {
-        const number = answer.dataset['number'];
+        const number = answer.dataset["number"];
         answer.innerHTML = currentQuestion['answer' + number];
-
-    })
+    });
 
     //Removes used question from array
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
-};
+}
 
 // Checks if the user's answer is right or wrong
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
@@ -201,10 +201,10 @@ answers.forEach(answer => {
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             generateRandomQuestion();
-        }, 200)
+        }, 200);
 
     });
-})
+});
 
 //Increases the user's score on a correct answer
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
@@ -212,7 +212,7 @@ answers.forEach(answer => {
 function incrementScore(num) {
     score = score + num;
     scoreText.innerHTML = score;
-    };
+    }
 
 //Show's the user's final score
 
@@ -220,7 +220,8 @@ function showFinalScore() {
     finalScore.innerHTML = mostRecentScore;
     welcomeArea.style.display = "none";
     quizArea.style.display = "none";
-    resultArea.style.display = "flex"
+    resultArea.style.display = "flex";
+    startQuiz();
 }
 
 //showFinalScore();//
@@ -240,7 +241,11 @@ function showFinalResult() {
     }
 }
 
+
+
 startQuiz();
+
 showFinalScore();
+
 showFinalResult();
 
