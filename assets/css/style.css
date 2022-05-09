@@ -17,8 +17,12 @@ body {
     margin: 0;
     padding-top: 1%;
     padding-bottom: 1%;
+    text-decoration: none;
+    color: black;
 }
-
+ a {
+     text-decoration: none;
+ }
 
 /*--Quiz layout--*/
 
@@ -305,7 +309,6 @@ footer>p {
     #quiz-question {
         font-size: 160%;
         height: 115px;
-        ;
     }
 
     #result-area {
@@ -464,7 +467,7 @@ footer>p {
     }
 
     #question-container {
-        height: 90px;
+        height: 103px;
     }
 
     #quiz-question {

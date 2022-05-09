@@ -115,6 +115,8 @@ let showResult = document.getElementById("show-result");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const finalScore = document.getElementById("show-score");
 
+finalScore.innerHTML = mostRecentScore;
+
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -217,14 +219,14 @@ function incrementScore(num) {
 //Show's the user's final score
 
 function showFinalScore() {
+    //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
     finalScore.innerHTML = mostRecentScore;
+
     welcomeArea.style.display = "none";
     quizArea.style.display = "none";
     resultArea.style.display = "flex";
     startQuiz();
 }
-
-//showFinalScore();//
 
 //Show's the user's final result
 function showFinalResult() {
