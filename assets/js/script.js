@@ -112,10 +112,8 @@ const playAgain = document.getElementById("play-again");
 let scoreText = document.getElementById("score");
 let questionCounterText = document.getElementById("question-counter");
 let showResult = document.getElementById("show-result");
-const mostRecentScore = localStorage.getItem("mostRecentScore");
+let mostRecentScore = ""
 const finalScore = document.getElementById("show-score");
-
-finalScore.innerHTML = mostRecentScore;
 
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
 let currentQuestion = {};
@@ -161,8 +159,23 @@ function generateRandomQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('mostRecentScore', score);
+        mostRecentScore = localStorage.getItem('mostRecentScore');
+        finalScore.innerHTML = (mostRecentScore);
+        if (mostRecentScore >= 8) {
+            showResult.innerHTML = "Outstanding";
+        } else if (mostRecentScore >= 6) {
+            showResult.innerHTML = "Exceeds Expectations";
+        } else if (mostRecentScore >= 4) {
+            showResult.innerHTML = "Acceptable";
+        } else if (mostRecentScore >= 2) {
+            showResult.innerHTML = "Pass";
+        } else if (mostRecentScore >= 0) {
+            showResult.innerHTML = "Troll";
+        }
         quizArea.style.display = "none";
-        resultArea.style.display = "flex";
+        return resultArea.style.display = "flex";   
+        
+        
     };
 
     questionCounter++;
@@ -216,38 +229,23 @@ function incrementScore(num) {
     scoreText.innerHTML = score;
     }
 
+    
 //Show's the user's final score
 
 function showFinalScore() {
     //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
-    finalScore.innerHTML = mostRecentScore;
 
     welcomeArea.style.display = "none";
     quizArea.style.display = "none";
     resultArea.style.display = "flex";
     startQuiz();
+    
 }
-
-//Show's the user's final result
-function showFinalResult() {
-    if (mostRecentScore >= 8) {
-        showResult.innerHTML = "Outstanding";
-    } else if (mostRecentScore >= 6) {
-        showResult.innerHTML = "Exceeds Expectations";
-    } else if (mostRecentScore >= 4) {
-        showResult.innerHTML = "Acceptable";
-    } else if (mostRecentScore >= 2) {
-        showResult.innerHTML = "Pass";
-    } else if (mostRecentScore >= 0) {
-        showResult.innerHTML = "Troll";
-    }
-}
-
 
 
 startQuiz();
 
 showFinalScore();
 
-showFinalResult();
+
 
