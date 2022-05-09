@@ -352,15 +352,10 @@ footer>p {
     }
 
     #answer-div {
-        display: grid;
-        grid-template-columns: 48% 1fr 48%;
-        grid-template-rows: 25px 25px 25px 25px;
-        column-gap: 3%;
-        row-gap: 10%;
-        justify-items: center;
-        justify-content: space-around;
+        display: flex;
         align-content: center;
         padding: 20%;
+        flex-direction: column;
     }
 
     .answer-text {
