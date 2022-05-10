@@ -131,10 +131,12 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
 
 #### Lighthouse Report
 ![Lightouse Report](assets/images/readme/LighthouseReport.PNG)
-#### Known Bugs
-  * Social Media links link to the wrong page. For example, when facebook icon is clicked, Instagram is opened. Hrefs in HTML are correct.
 
 ---
+### Future Features
+In the future, features to include are:
+  * Add a timer so that the user must choose an answer within 15 seconds
+  * Add more questions
 
 ### Deployment
 #### GitHub Pages
