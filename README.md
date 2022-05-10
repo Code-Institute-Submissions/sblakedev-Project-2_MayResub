@@ -2,8 +2,22 @@
 
 This quickfire Harry Potter quiz is a short quiz website with questions about the Harry Potter book series. The site is targeted towards fans of Harry Potter who want to test their knowledge and receive a result based on the grading system in the books themselves. The quiz takes the format of a question with 4 multiple choice answers. It is a fully responsive JavaScript game.
 
+---
+
+### Table of Contents
+  * [Responsive Mockup](https://github.com/sblakedev/Project-2#responsive-mockup)
+  * [User Experience](https://github.com/sblakedev/Project-2#user-experience)
+  * [Features](https://github.com/sblakedev/Project-2#features)
+  * [Testing](https://github.com/sblakedev/Project-2#testing)
+  * [Deployment](https://github.com/sblakedev/Project-2#deployment)
+  * [Credits](https://github.com/sblakedev/Project-2#credits)
+
+---
+
 ### Responsive MockUp
-    ![Responsive MockUp](assets/images/readme/ResponsiveDesign.PNG)
+![Responsive MockUp](assets/images/readme/ResponsiveDesign.PNG)
+
+---
 
 ### User Experience
 #### User Stories
@@ -25,6 +39,8 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
     * ![Desktop Wireframe](assets/images/readme/Potter%20Quiz%20Desktop%20Wireframes.PNG)
     * ![Tablet Wireframe](assets/images/readme/Potter%20Quiz%20Tablet%20Wireframes.PNG)
     * ![Phone Wireframe](assets/images/readme/Potter%20Quiz%20Phone%20Wireframes.PNG)
+
+---
 
 ### Features
 #### Heading
@@ -57,8 +73,11 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 ![Footer](assets/images/readme/Footer.PNG)
 * The footer section includes links to the relevant social media sites for the quiz website. The links will open to a new tab to allow easy navigation for the user. The footer is valuable to the user as it enables them to contact the site owners if needed.
 
+---
+
 ### Testing
 #### Validator Testing
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 ![HTML Validation](assets/images/readme/HTMLValidation.PNG)
 ![CSS Validation](assets/images/readme/CSSValidation.PNG)
 ![JavaScript Validation](assets/images/readme/JSValidation.PNG)
@@ -108,7 +127,9 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
         When the play again button is clicked, the user is taken back to the welcome area. When the start button is clicked, all scores and results have been refreshed.
 
 #### Known Bugs
-  * No known bugs.
+  * Social Media links link to the wrong page. For example, when facebook icon is clicked, Instagram is opened. Hrefs in HTML are correct.
+
+---
 
 ### Deployment
 #### GitHub Pages
@@ -138,6 +159,8 @@ To make a local clone, the following steps are to be used.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type git clone and then paste the link you copied earlier.
 7. Press enter. Your local clone has been created.
+
+---
 
 ### Credits
 #### Code
