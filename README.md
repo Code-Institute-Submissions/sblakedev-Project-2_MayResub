@@ -8,7 +8,9 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
   * [Responsive Mockup](https://github.com/sblakedev/Project-2#responsive-mockup)
   * [User Experience](https://github.com/sblakedev/Project-2#user-experience)
   * [Features](https://github.com/sblakedev/Project-2#features)
+  * [Technologies Used](https://github.com/sblakedev/Project-2/blob/main/README.md#technologies-used)
   * [Testing](https://github.com/sblakedev/Project-2#testing)
+  * [Future Features](https://github.com/sblakedev/Project-2/blob/main/README.md#future-features)
   * [Deployment](https://github.com/sblakedev/Project-2#deployment)
   * [Credits](https://github.com/sblakedev/Project-2#credits)
 
@@ -153,6 +155,9 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
 In the future, features to include are:
   * Add a timer so that the user must choose an answer within 15 seconds
   * Add more questions
+  * Add a progress bar for questions answered and questions left to answer
+  * User will be able to create a username
+  * Add a high score board
 
 ---
 
