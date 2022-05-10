@@ -79,6 +79,8 @@ body {
     flex-direction: column;
 }
 
+/*Question Area*/
+
 #question-container {
     max-width: max-content;
     max-height: 200%;
@@ -117,6 +119,7 @@ body {
     text-align: center;
 }
 
+/*Result Area*/
 
 #button-div {
     padding: 1%;
@@ -213,6 +216,8 @@ body {
     padding: 3%;
     width: 100%;
 }
+
+/*Footer*/
 
 footer {
     height: 75px;
