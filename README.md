@@ -88,6 +88,8 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 4. GitHub - This was used to store the projects code after being pushed from Git.
 5. Git - This was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
+---
+
 ### Testing
 #### Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
