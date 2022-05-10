@@ -78,8 +78,11 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 ### Testing
 #### Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
+* HTML
 ![HTML Validation](assets/images/readme/HTMLValidation.PNG)
+* CSS
 ![CSS Validation](assets/images/readme/CSSValidation.PNG)
+* Javascript
 ![JavaScript Validation](assets/images/readme/JSValidation.PNG)
 
 #### User Stories Testing
