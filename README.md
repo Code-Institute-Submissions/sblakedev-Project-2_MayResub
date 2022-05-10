@@ -75,6 +75,19 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 
 ---
 
+### Technologies Used
+#### Languages Used
+* HTML
+* CSS
+* JavaScript
+
+#### Frameworks, Libraries & Progrmas Used
+1. Google Fonts - This was used to import the 'Abel' font into the style.css file which is used on all pages throughout the project.
+2. Font Awesome - This was used on all pages throughout the website to add icons for social media links.
+3. Balsamiq - This was used to create the wireframes during the initial design phase.
+4. GitHub - This was used to store the projects code after being pushed from Git.
+5. Git - This was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
 ### Testing
 #### Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -133,6 +146,7 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
 ![Lightouse Report](assets/images/readme/LighthouseReport.PNG)
 
 ---
+
 ### Future Features
 In the future, features to include are:
   * Add a timer so that the user must choose an answer within 15 seconds
