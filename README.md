@@ -3,9 +3,7 @@
 This quickfire Harry Potter quiz is a short quiz website with questions about the Harry Potter book series. The site is targeted towards fans of Harry Potter who want to test their knowledge and receive a result based on the grading system in the books themselves. The quiz takes the format of a question with 4 multiple choice answers. It is a fully responsive JavaScript game.
 
 ### Responsive MockUp
-    ![Image for website responsiveness on desktop]
-    ![Image for website responsiveness on phone]
-    ![Image for website responsiveness on tablet]
+    ![Responsive MockUp](assets/images/readme/ResponsiveDesign.PNG)
 
 ### User Experience
 
@@ -63,8 +61,25 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 ### Testing
 
 #### Validator Testing
+![HTML Validation](assets/images/readme/HTMLValidation.PNG)
+![CSS Validation](assets/images/readme/CSSValidation.PNG)
+![JavaScript Validation](assets/images/readme/JSValidation.PNG)
 
-#### Unfixed Bugs
+#### User Stories Testing
+a. As a visitor, I want to understand the main purpose of the site.
+    * As a visitor, I understand that this is a Harry Potter quiz site which will give me a result based on my final score.
+b. As a visitor, I want to be able to navigate easily around the site and start the quiz.
+    * As a visitor, I see that I can start the quiz by clicking the start button.
+c. As a visitor, I want to be able to read the question and see relevant answers.
+    * As a visitor, I can see the question and 4 different answers relevant to the question.
+d. As a visitor, I want to be able to answer the question and know that the site recognises my choice.
+    * As a visitor, I can see that the box changes when I hover over an answer. If I get the answer correct, the box flashes green. If I get the answer wrong, the box flashes red.
+e. As a visitor, I want to be able to see how many questions I have answered and see my current score.
+    * As a visitor, I can see under the answers, how many questions out of 10 that I have answered and what my current score is.
+f. As a visitor, I want to be able to get my final result when the quiz is finished.
+    * As a visitor, after I have answered all 10 questions, I can see the box that contains my score and what my result is based on this score. If I do the quiz again and get a different score, the result may change to reflect the new score.
+g. As a visitor, I want to be able to easily get in contact with the site creator in case I have any issues with the site.
+    * As a visitor, I can see the relevant social media links which I can open in a new window to contact the owner of the quiz site.
 
 ### Deployment
 #### GitHub Pages

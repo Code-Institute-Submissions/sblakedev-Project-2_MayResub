@@ -112,7 +112,7 @@ const playAgain = document.getElementById("play-again");
 let scoreText = document.getElementById("score");
 let questionCounterText = document.getElementById("question-counter");
 let showResult = document.getElementById("show-result");
-let mostRecentScore = ""
+let mostRecentScore = "";
 const finalScore = document.getElementById("show-score");
 
 //Code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by James Quick
@@ -137,7 +137,7 @@ playAgain.addEventListener("click", startQuiz); {
     welcomeArea.style.display = "flex";
     quizArea.style.display = "none";
     resultArea.style.display = "none";
-};
+}
 
 //Functions
 //Starts the quiz
@@ -176,7 +176,7 @@ function generateRandomQuestion() {
         return resultArea.style.display = "flex";   
         
         
-    };
+    }
 
     questionCounter++;
     questionCounterText.innerHTML = questionCounter + '/' + maxQuestions;
@@ -185,7 +185,7 @@ function generateRandomQuestion() {
     question.innerHTML = currentQuestion.question;
 
     answers.forEach(answer => {
-        const number = answer.dataset["number"];
+        const number = answer.dataset.number;
         answer.innerHTML = currentQuestion['answer' + number];
     });
 
@@ -204,7 +204,7 @@ answers.forEach(answer => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         const classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct" : "incorrect";
 
