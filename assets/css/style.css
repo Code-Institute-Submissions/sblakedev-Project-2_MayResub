@@ -234,31 +234,26 @@ footer {
 }
 
 .social-networks {
+    display: flex;
     list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-left: -27px;
-}
+    padding-left: 1px;
+    }
 
 .social-networks>li {
-    display: inline;
-    float: left;
+    font-size: 200%;
 }
 
 .social-networks i {
-    font-size: 200%;
-    margin-left: 25px;
+    float: left;
+    padding-left: 25px;
     color: black;
-    padding: 25%;
-    vertical-align: middle;
 }
 
 footer>p {
     float: right;
     font-size: 150%;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: -56px;
     margin-bottom: 10px;
     line-height: 50px;
     vertical-align: middle;
@@ -294,10 +289,7 @@ footer>p {
         right: 0;
     }
 
-    footer>p {
-        margin-top: 0px;
     }
-}
 
 @media screen and (max-width:1024px) {
 
@@ -382,6 +374,17 @@ footer>p {
         font-size: 75%;
         padding-bottom: 10px;
     }
+
+    .social-networks {
+        display: flex;
+        list-style-type: none;
+        padding-left: 1px;
+        padding-top: 10px;
+    }
+
+    footer > p {
+        margin-top: -48px;
+    }
 }
 
 @media screen and (max-width:562px) {
@@ -416,6 +419,10 @@ footer>p {
         right: 0;
         font-size: 75%;
         padding-bottom: 10px;
+    }
+
+    footer>p {
+        margin-top: -46px;
     }
 }
 
@@ -456,6 +463,10 @@ footer>p {
         right: 0;
         font-size: 60%;
         padding-bottom: 10px;
+    }
+
+    footer > p {
+        margin-top: -42px;
     }
 }
 
@@ -500,6 +511,17 @@ footer>p {
         right: 0;
         font-size: 50%;
         padding-bottom: 10px;
+    }
+
+    footer > p {
+        margin-top: -41px;
+    }
+
+    .social-networks {
+        display: flex;
+        list-style-type: none;
+        padding-left: 1px;
+        padding-top: 10px;
     }
 }
 
@@ -578,9 +600,16 @@ footer>p {
         float: right;
         font-size: 150%;
         margin-right: 10px;
-        margin-top: 10px;
+        margin-top: -41px;
         margin-bottom: 10px;
         line-height: 50px;
         vertical-align: middle;
+    }
+
+    .social-networks {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0px;
+        padding-top: 10px;
     }
 }
