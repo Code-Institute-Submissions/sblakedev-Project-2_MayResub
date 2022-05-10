@@ -67,19 +67,48 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 
 #### User Stories Testing
 a. As a visitor, I want to understand the main purpose of the site.
-    * As a visitor, I understand that this is a Harry Potter quiz site which will give me a result based on my final score.
+   * As a visitor, I understand that this is a Harry Potter quiz site which will give me a result based on my final score.
+
 b. As a visitor, I want to be able to navigate easily around the site and start the quiz.
-    * As a visitor, I see that I can start the quiz by clicking the start button.
+   * As a visitor, I see that I can start the quiz by clicking the start button.
+
 c. As a visitor, I want to be able to read the question and see relevant answers.
-    * As a visitor, I can see the question and 4 different answers relevant to the question.
+   * As a visitor, I can see the question and 4 different answers relevant to the question.
+
 d. As a visitor, I want to be able to answer the question and know that the site recognises my choice.
-    * As a visitor, I can see that the box changes when I hover over an answer. If I get the answer correct, the box flashes green. If I get the answer wrong, the box flashes red.
+   * As a visitor, I can see that the box changes when I hover over an answer. If I get the answer correct, the box flashes green. If I get the answer wrong, the box flashes red.
+
 e. As a visitor, I want to be able to see how many questions I have answered and see my current score.
-    * As a visitor, I can see under the answers, how many questions out of 10 that I have answered and what my current score is.
+   * As a visitor, I can see under the answers, how many questions out of 10 that I have answered and what my current score is.
+
 f. As a visitor, I want to be able to get my final result when the quiz is finished.
-    * As a visitor, after I have answered all 10 questions, I can see the box that contains my score and what my result is based on this score. If I do the quiz again and get a different score, the result may change to reflect the new score.
+   * As a visitor, after I have answered all 10 questions, I can see the box that contains my score and what my result is based on this score. If I do the quiz again and get a different score, the result may change to reflect the new score.
+
 g. As a visitor, I want to be able to easily get in contact with the site creator in case I have any issues with the site.
-    * As a visitor, I can see the relevant social media links which I can open in a new window to contact the owner of the quiz site.
+   * As a visitor, I can see the relevant social media links which I can open in a new window to contact the owner of the quiz site.
+
+
+#### Element Testing
+* Heading
+    * Expected Result
+        When the heading "Harry Potter Quiz" is clicked, the user should be returned to the Welcome Area.
+    * Testing
+        When the heading "Harry Potter Quiz" is clicked, the user is returned to the Welcome Area.
+* Start Button
+    * Expected Result
+        When the start button is clicked, the user should be taken to the question area which should display the question and 4 relevant answers.
+    * Testing
+        When the start button is clicked, the user is taken to the question area which displays the question and 4 relevant answers.
+* Answer Box
+    * Expected Result
+        When the user hovers over an answer, the border should change thickness and colour. When the answer is clicked, if it correct, the box should flash green before moving on to the next question. If the answer is incorrect, the box should flash red before moving on to the next question. When a question has been answered, the answer count below the answers, should increase by one. The score should also increase depending on whether the correct answer was chosen or not. When all questions have been answered, the user should be taken to the results page, where they are shown a result which corresponds to the score.
+    * Testing
+        When the user hovers over the answer, the border changes thickness and changes the colour to a dark red. When the correct answer is clicked, the box flashes green before showing the next question. When the incorrect answer is clicked, the box flashes red before showing the next question. When the next question shows, the answer count has increased by one. When a correct answer is chosen, the score increases. When an incorrect answer is chosen, the score stays as is. When all the questions have been answered, the user is taken to the results page which displays the user's score and a result which corresponds to the score. Re-starting the quiz and getting a different score changes the result.
+* Play Again Button
+    * Expected Result
+        When the play again button is clicked, the user should be taken back to the welcome area with all scores and results refreshed.
+    * Testing
+        When the play again button is clicked, the user is taken back to the welcome area. When the start button is clicked, all scores and results have been refreshed.
 
 ### Deployment
 #### GitHub Pages
