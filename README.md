@@ -6,7 +6,6 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
     ![Responsive MockUp](assets/images/readme/ResponsiveDesign.PNG)
 
 ### User Experience
-
 #### User Stories
 * Visitor Goals
     a. As a visitor, I want to understand the main purpose of the site.
@@ -59,7 +58,6 @@ This quickfire Harry Potter quiz is a short quiz website with questions about th
 * The footer section includes links to the relevant social media sites for the quiz website. The links will open to a new tab to allow easy navigation for the user. The footer is valuable to the user as it enables them to contact the site owners if needed.
 
 ### Testing
-
 #### Validator Testing
 ![HTML Validation](assets/images/readme/HTMLValidation.PNG)
 ![CSS Validation](assets/images/readme/CSSValidation.PNG)
@@ -87,7 +85,6 @@ f. As a visitor, I want to be able to get my final result when the quiz is finis
 g. As a visitor, I want to be able to easily get in contact with the site creator in case I have any issues with the site.
    * As a visitor, I can see the relevant social media links which I can open in a new window to contact the owner of the quiz site.
 
-
 #### Element Testing
 * Heading
     * Expected Result
@@ -109,6 +106,9 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
         When the play again button is clicked, the user should be taken back to the welcome area with all scores and results refreshed.
     * Testing
         When the play again button is clicked, the user is taken back to the welcome area. When the start button is clicked, all scores and results have been refreshed.
+
+#### Known Bugs
+  * No known bugs.
 
 ### Deployment
 #### GitHub Pages
@@ -140,9 +140,21 @@ To make a local clone, the following steps are to be used.
 7. Press enter. Your local clone has been created.
 
 ### Credits
-
-#### Content
-* CSS grid help: css-tricks.com and https://codepen.io/mogpt/pen/ebXdzg
+#### Code
+  * CSS grid help: css-tricks.com and https://codepen.io/mogpt/pen/ebXdzg
+  * JavaScript guidance and some code from Build a Quiz App with HTML, CSS, and JavaScript Udemy video by [James Quick](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
+  * Boilerplate code came from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template/tree/main/.vscode)
+  * Most issues in the code were resolved by searching through [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/)
 
 #### Media
-* Favicon from http://clipart-library.com/images_k/lightning-bolt-transparent-background/lightning-bolt-transparent-background-24.png
+  * Favicon from http://clipart-library.com/images_k/lightning-bolt-transparent-background/lightning-bolt-transparent-background-24.png
+
+#### Content
+  * All questions were written by the author
+  * Harry Potter is owned by JK Rowling
+
+#### Acknowlegdements
+  * Inspiration for ReadMe came from the Code Institute Sample ReadMe, Code Institue ReadMe template, my own Project 1 ReadMe and suggestions from my Project 1 assesor.
+  * My mentor Martina Terlevic for fantastic guidance.
+  * Slack community.
+  * Code Institute Tutors - James, Sean and Oisin.
