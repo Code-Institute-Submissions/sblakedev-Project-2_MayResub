@@ -138,6 +138,8 @@ In the future, features to include are:
   * Add a timer so that the user must choose an answer within 15 seconds
   * Add more questions
 
+---
+
 ### Deployment
 #### GitHub Pages
 I used the following steps to deploy the project.
