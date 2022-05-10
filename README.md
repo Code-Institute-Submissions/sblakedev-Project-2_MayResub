@@ -129,6 +129,8 @@ g. As a visitor, I want to be able to easily get in contact with the site creato
     * Testing
         When the play again button is clicked, the user is taken back to the welcome area. When the start button is clicked, all scores and results have been refreshed.
 
+#### Lighthouse Report
+![Lightouse Report](assets/images/readme/LighthouseReport.PNG)
 #### Known Bugs
   * Social Media links link to the wrong page. For example, when facebook icon is clicked, Instagram is opened. Hrefs in HTML are correct.
 
